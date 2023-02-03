@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <button class="btn btn--green header__sign-in-btn">Sign in</button>
+      <button class="btn btn--green-border header__sign-up-btn">Sign up</button>
+    </header>
+    <main>
+      <form class="sign-in-form form" action="#">
+        <div class="form__input-box">
+          <ion-icon class="form__icon" name="person-outline"></ion-icon>
+          <input
+            required
+            class="form__input"
+            placeholder="User Name"
+            type="text"
+            name=""
+            id="sign-in-user-name-input"
+          />
+        </div>
+        <div class="form__input-box">
+          <ion-icon class="form__icon" name="lock-closed-outline"></ion-icon>
+          <input
+            required
+            class="form__input"
+            placeholder="Password"
+            type="password"
+            name="password-input"
+            id="sign-in-password-input"
+          />
+        </div>
+        <p class="sign-in-form__error"></p>
+        <button type="menu" class="btn btn--green sign-in-form__btn">
+          Sign in
+        </button>
+      </form>
+      <form class="sign-up-form form hidden" action="#">
+        <div class="form__input-box">
+          <ion-icon class="form__icon" name="person-outline"></ion-icon>
+          <input
+            required
+            class="form__input"
+            placeholder="First Name"
+            type="text"
+            name=""
+            id="sign-up-first-name-input"
+          />
+        </div>
+        <div class="form__input-box">
+          <ion-icon class="form__icon" name="person-outline"></ion-icon>
+          <input
+            required
+            class="form__input"
+            placeholder="Last Name"
+            type="text"
+            name=""
+            id="sign-up-last-name-input"
+          />
+        </div>
+        <div class="form__input-box">
+          <ion-icon class="form__icon" name="mail-outline"></ion-icon>
+          <input
+            required
+            class="form__input"
+            placeholder="Email"
+            type="email"
+            name=""
+            id="sign-up-email-input"
+          />
+        </div>
+        <div class="form__input-box">
+          <ion-icon class="form__icon" name="person-circle-outline"></ion-icon>
+          <input
+            required
+            class="form__input"
+            placeholder="User Name"
+            type="text"
+            name=""
+            id="sign-up-user-name-input"
+          />
+        </div>
+        <div class="form__input-box">
+          <ion-icon class="form__icon" name="lock-closed-outline"></ion-icon>
+          <input
+            required
+            class="form__input"
+            placeholder="Password"
+            type="password"
+            name="password-input"
+            id="sign-up-password-input"
+          />
+        </div>
+        <p class="sign-up-form__error"></p>
+        <button type="menu" class="btn btn--green sign-up-form__btn">
+          Sign up
+        </button>
+      </form>
+      <table class="users-table hidden">
+        <tr class="users-table__header-row">
+          <th>UserName</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+      </table>
+      <div class="sign-up-modal-box hidden">
+        <div class="sign-up-modal">
+          <p class="sign-up-modal__description">
+            You've succesfully create an account! Now you can sign in.
+          </p>
+          <button class="btn btn-ok btn--green sign-up-modal__btn">OK!</button>
+        </div>
+      </div>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
